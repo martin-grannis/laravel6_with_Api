@@ -13,6 +13,15 @@ use Illuminate\Http\Request;
 |
 */
 
+
+//some test ones for the todo application
+Route::get('/todos', 'TodosController@index');
+Route::post('/todos', 'TodosController@store');
+Route::patch('/todos/{todo}', 'TodosController@update');
+Route::delete('/todos/{todo}', 'TodosController@destroy');
+
+
+
 Route::post('register', 'AuthController@register');
 Route::post('login', 'AuthController@login');
 
